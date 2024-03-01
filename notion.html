@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="notion.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="head">
+        <div class="left-head">
+            <img src="data:image/png;base64,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" alt="" width="100px">
+            <a href="" class="product">Product</a> 
+            <a href="" class="product">Download</a>
+            <a href="" class="product">Solutions</a>
+            <a href="" class="product">Resources</a>
+        </div>
+
+        <div class="right-head">
+            <a href="" class="product">Request A Demo</a>
+            <a href="" class="product">Log In</a>
+            <a href="" class="get">Get Notion free</a>
+            <a href=""></a>
+        </div>
+    </header>
+
+    <section class="second">
+        <h1 class="write">Write, plan, share.<br>
+            With AI at your side.</h1>
+            <p class="connect">Notion is the connected workspace where better, faster work happens.</p>
+            <div class="two-links">
+                <a href="" class="get-2">Get Notion free &rarr;</a>
+                <a href="" class="request">Request a demo &rarr;</a>
+            </div>
+
+            <div class="images">
+                <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=2048/https://images.ctfassets.net/spoqsaf9291f/4qPZTqxXRCDQiimE4c9xXc/eb57558f50ee6fac68dc04e3b5099c8a/home-hero.png" alt="" width="650px" class="doodle-1">
+            </div>
+
+            <div class="little-boxes">
+                <div class="first-box">
+                    <i class="bi bi-stars"></i>
+                    <h3 class="ai">AI</h3>
+                    <p class="ask">Ask literally anything.<br>Notion will answer.</p>
+                </div>
+
+                <div class="second-box">
+                    <i class="bi bi-file-earmark-text"></i>
+                    <h3 class="ai">Docs</h3>
+                    <p class="ask">Simple, powerful,<br>bautiful. Next-<br>gen notes and docs</p>
+                </div>
+
+                <div class="third-box">
+                    <i class="bi bi-book"></i>
+                    <h3 class="ai">Wikis</h3>
+                    <p class="ask">Centralize your knowledge no more hunting for answers.</p>
+                </div>
+
+                <div class="fourth-box">
+                    <i class="bi bi-bullseye"></i>
+                    <h3 class="ai">Projects</h3>
+                    <p class="ask">Manage complex projects without the chaos.</p>
+                </div>
+
+                <div class="fifth-box">
+                    <i class="bi bi-calendar2-date"></i>
+                    <h3 class="ai">Calendar</h3>
+                    <p class="ask">Manage your time and projects, together.</p>
+                </div>
+            </div>
+
+            <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=3840/https://images.ctfassets.net/spoqsaf9291f/3JW0WeAtEzqbzrA47wRqYW/48d84ffa769ad63554f857b90357b0e2/user-research.png" alt="" width="1020px" class="large-pic">
+    </section>
+
+    <section class="third">
+        <h1 class="millions">Millions run on Notion every day</h1>
+        <p class="power">Powering the world’s best teams, from next-generation startups<br> to established enterprises.</p>
+        <div class="read">
+            <a href="" class="customer">Read Customer stories</a>
+        </div> 
+
+        <div class="logos">
+            <img src="https://images.ctfassets.net/spoqsaf9291f/502ApiNcRHgIwrDU8XRYTQ/803820da8aa6d066ad61454122939f67/figma.png" alt="" width="100px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/6S40IUVrdki2SlPXQMHKKr/e844760d2b20d5768bf3de9dc1d4649e/pixar.png" alt="" width="100px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/1jlyWNfa8mnYxJtmzu5lpV/e330a102d0e7ac11e362ca26302a6742/doordash.png" alt="" width="150px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/2VtWKmfmToo8n3X7BY0WwA/9127e2ed5c004f3d2b0f4bc74c38d99c/nike.png" alt="" width="80px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/6dIueLe6mDK6HhNObFq2On/6379b943a510bb62e1fd6207c8c9b9c3/amazon.png" alt="" width="80px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/6WgTu82608DIXfxu9KliYL/dd3a9cbfd31ab5f5dfe8eb1ec3b2be6d/pinterest_logo.png" alt="" width="100px" class="blink"><br>
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/LnKYnStAE4vKs51ejLRj2/0346a71d8bd782e5d257a4431ab53b37/General_Electric_logo.png" alt="" width="50px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/3o80U1VqLr5X1nE4kWlZM5/2cd376d24d9c6da9bd8ade0f62c4dc54/uber.png" alt="" width="70px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/2owwRqFrnSdM98Js9Itzih/15cca0ca61fbbaadfeef6b70108ffb42/plaid.png" alt="" width="100px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/18DMuU2Os0OAYiJxqU3aE7/565f76f5b8043e120e2d1df0fcc30291/toyota.png" alt="" width="90px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/346udUCJm76OzP8M0yI78w/38d0237a76868caa123ae7b95df0ae81/snowflake_logo.png" alt="" width="150px" class="blink"><br>
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/xDZNk5XtOxMEiqsiJ6paq/55a40e92451b740b392e601ae5dfdc2e/headspace_logo.png" alt="" width="150px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/4r1tX1hoz2RZigBJYbFbBJ/cd0621793f7e04cd8d84b52a855989c2/angel-list.png" alt="" width="100px" class="blink">
+
+            <img src="https://images.ctfassets.net/spoqsaf9291f/4AmP2cmuZ2kUwbeSw3ukj9/00cdaf659f5888c8779781b0460041cd/robinhood.png" alt="" width="150px" class="blink">
+        </div>
+    </section>
+
+    <section class="fourth">
+        <div class="flex">
+            <h1 class="consolidate">Consolidate tools.<br>
+                Cut costs.</h1>
+                <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=256/front-static/pages/home/giant-pencil-illustration.png" alt="">
+        </div>
+        <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=640/front-static/pages/home/tools-strikethrough-V2.png" alt="">
+
+        <blockquote class="rid">"We got rid of nearly a dozen different tools because of<br> what Notion does for us."</blockquote>
+        <div class="guy">
+            <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=128/front-static/shared/logos/color/metalab.png" alt="">
+            <div class="guy-2">
+                <p class="justin">Justin Watt</p>
+                <p class="die">Director of Ops & Marketing, MetaLab</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fifth">
+        <div class="flex-2">
+            <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=256,quality=100/front-static/shared/illustrations/blocks/topPeekI.png"
+             alt="">
+             <h1 class="block">Powerful building blocks</h1>
+        </div>
+
+        <div class="large">
+            <i class="bi bi-shuffle"></i>
+            <h3>Visualize, filter & sort any way you want</h3>
+            <p class="show">Show only tasks assigned to you, or items marked as urgent. Break<br> down any project in the way that’s most helpful to you.</p> 
+            
+            <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=1920/front-static/pages/home/building-blocks/list.png" alt="" width="99%" class="ino">
+
+            <div class="yeat">
+                <a href="" class="board">Board</a>
+                <a href="" class="board">Table</a>
+                <a href="" class="board">Timeline</a>
+                <a href="" class="board">Calendar</a>
+                <a href="" class="board">Gallery</a>
+                <a href="" class="board">List</a>
+            </div>
+        </div>
+
+        <div class="bottom-two">
+            <div class="bottom-fes">
+                <i class="bi bi-eye"></i>
+                <h3 class="custom">Customize the info you track</h3>
+                <p class="create">Create your own labels, tags, owners, and more, so everyone has context and everything stays organized.</p>
+                <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=1080/front-static/pages/home/customize-info.png" alt="" width="99.9%" class="label">
+            </div>
+
+            <div class="bottom-fes">
+                <i class="bi bi-palette"></i>
+                <h3 class="custom">Build any page, communicate any ide</h3>
+                <p class="create">Everything is drag and drop in Notion — images, toggles, to-do’s, even embedded databases.</p>
+                <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=1080/front-static/pages/home/build-any-page-communicate-any-idea.png" alt="" width="99.9%" class="label">
+            </div>
+        </div>
+
+        <blockquote class="rid">"Notion adapts to your needs. It’s as minimal or as powerful as you need it to be."</blockquote>
+        <div class="guy">
+            <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=48/front-static/shared/logos/color/match-group.png" alt="">
+            <div class="guy-2">
+                <p class="justin">Rahim Makani</p>
+                <p class="die">Director of Product, Matchgroup</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sixth">
+        <h1 class="team">Every team, side-by-side</h1>
+        <div class="tools">
+            <div class="min-tool">
+                <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=96,quality=100/front-static/pages/home/persona-carousel/icons/engineering-v2.png" alt="" width="90%" class="rocket">
+                <p>Engineering</p>
+            </div>
+
+            <div class="min-tool">
+                <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=96,quality=100/front-static/pages/home/persona-carousel/icons/design-v2.png" alt="" width="90%" class="rocket">
+                <p>Design</p>
+            </div> <div class="min-tool">
+                <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=96,quality=100/front-static/pages/home/persona-carousel/icons/product.png" alt="" width="90%" class="rocket">
+                <p>Product</p>
+            </div>
+            <div class="min-tool">
+                <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=96,quality=100/front-static/pages/home/persona-carousel/icons/marketing.png" alt="" width="90%" class="rocket">
+                <p>Marketing</p>
+            </div>
+            <div class="min-tool">
+                <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=96,quality=100/front-static/pages/home/persona-carousel/icons/operations.png" alt="" width="90%" class="rocket">
+                <p>Operations</p>
+            </div>
+
+            <div class="min-tool">
+                <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=96,quality=100/front-static/pages/home/persona-carousel/icons/hr-v2.png" alt="" width="90%" class="rocket">
+                <p>HR</p>
+            </div>
+        </div>
+        <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=1920/front-static/pages/home/persona-carousel/screenshots/hr.png" alt="" class="hi" width="90%" class="rocket">
+    </section>
+
+    <section class="seventh">
+        <h1 class="join">Join a global movement.<br> Unleash your creativity.</h1>
+        <p class="vibe">Our vibrant community produces content, teaches courses, and leads events all over<br> the world.</p>
+        <a href="" class="more">Learn More</a>
+        <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=1080/front-static/pages/home/avatars.png" alt="" class="race">
+        <div class="numbers">
+            <div class="min-num">
+                <h1 class="mill">1M+</h1>
+                <p class="members">Community members</p>
+            </div>
+            <div class="min-num">
+                <h1 class="mill">150+</h1>
+                <p class="members">Community groups</p>
+            </div>
+
+            <div class="min-num">
+                <h1 class="mill">50+</h1>
+                <p class="members">Countries Represented</p>
+            </div>
+        </div>
+
+        <div class="sec-num">
+            <div class="min-sec">
+                <h3>An always-on support network</h3>
+                <p class="swap">Swap setups and share tips in over 149 online communities.</p>
+                <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=384/front-static/pages/home/community-icons-V2.png" alt="" width="200px">
+            </div>
+
+            <div class="min-sec">
+                <h3>Choose your language</h3>
+                <p class="swap">Notion currently supports English, Korean, Japanese, French, German, Spanish, and Portuguese. With more to come!</p>
+                <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=1080/front-static/pages/home/welcome-to-notion.png" alt="" width="400px">
+            </div>
+        </div>
+
+        <div class="tokyo">
+            <div class="tokyo-1">
+                 <img src="https://images.unsplash.com/photo-1611279522012-6c3e2d2c604f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuJTIwYXQlMjBhJTIwY29mZWUlMjBzaG9wfGVufDB8fDB8fHww" alt="" width="90%" height="90%">
+                 <p class="meet">Community meetup in Tokyo</p>
+            </div>
+
+            <div class="right-big">
+                <div class="right-small">
+                    <div class="mini-right">
+                        <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/home/avatars/twitter-avatar-deborah.png" alt="">
+                        <div class="quote">
+                            <p class="debbie">Deborah Mecca</p>
+                            <p class="mecca">@DebMecca</p>
+                        </div>
+                    </div>
+                    <blockquote class="used">I used to HATE documenting things. And then I started using @NotionHQ and I document a lot. A LOT A LOT. Now I just realize that it wasn't that I hated documenting, I just hated Google Docs.</blockquote>
+                </div>
+                <div class="right-small">
+                    <div class="mini-right">
+                        <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/home/avatars/twitter-avatar-andre.png" alt="">
+                        <div class="quote">
+                            <p class="debbie">Andre Blackman</p>
+                            <p class="mecca">@mindofandre</p>
+                        </div>
+                    </div>
+                    <blockquote class="used">One of the most incredible things about @NotionHQ is the dynamic community being built - creating and sharing at its best.</blockquote>
+                </div>
+
+                <div class="right-small">
+                    <div class="mini-right">
+                        <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=1920,quality=100/front-static/pages/home/avatars/twitter-avatar-oliver.png" alt="">
+                        <div class="quote">
+                            <p class="debbie">Oliver Peyre</p>
+                            <p class="mecca">@opeyre</p>
+                        </div>
+                    </div>
+                    <blockquote class="used">@NotionHQ Truly impressed by the velocity and quality of your work. Making using Notion even more fun week after week!</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="eigth">
+        <div class="man">
+            <div class="omo">
+                <h1 class="endless">Endless Ways to Use it</h1>
+                <a href="" class="browse">Browse Templates</a>
+            </div>
+           <img src="https://www.notion.so/cdn-cgi/image/format=auto,width=256,quality=100/front-static/shared/illustrations/blocks/topPeekJ.png" alt="" class="peek">
+        </div>
+
+        <div class="massive">
+            <div class="fes-massive">
+                <i class="bi bi-house-door-fill"></i>
+                <h3 class="wick">Company Wiki</h3>
+                <a href="" class="temp">Get Template</a>
+                <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=1920/front-static/pages/home/company-wiki-template.png" alt="" width="90%">
+            </div>
+
+            <div class="sc-mass">
+                 <div class="mini-sc">
+                    <i class="bi bi-flag-fill"></i>
+                    <h3 class="road">Product Roadmap</h3>
+                    <a href="" class="temp-2">Get Template</a>
+                 </div>
+
+                 <div class="mini-sc">
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h3 class="road">OKRs</h3>
+                    <a href="" class="temp-2">Get Template</a>
+                 </div>
+
+                 <div class="mini-sc">
+                    <i class="bi bi-journals"></i>
+                    <h3 class="road">Meeting Notes</h3>
+                    <a href="" class="temp-2">Get Template</a>
+                 </div>
+
+                 <div class="mini-sc">
+                    <i class="bi bi-airplane-fill"></i>
+                    <h3 class="road">Vacation Planner</h3>
+                    <a href="" class="temp-2">Get Template</a>
+                 </div>
+
+                 <div class="mini-sc">
+                    <i class="bi bi-calendar-check-fill"></i>
+                    <h3 class="road">Editorial Calendar</h3>
+                    <a href="" class="temp-2">Get Template</a>
+                 </div>
+
+                 <div class="mini-sc">
+                    <i class="bi bi-inbox"></i>
+                    <h3 class="road">Habit Tracker</h3>
+                    <a href="" class="temp-2">Get Template</a>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ninth">
+        <h1 class="start">Get Started for free</h1>
+        <p class="play">Play around with it first. Pay and add your team later.</p>
+        <div class="linking">
+            <a href="" class="get-2">Get Notion free &rarr;</a>
+                <a href="" class="request">Request a demo &rarr;</a>
+        </div>
+        <img src="https://www.notion.so/cdn-cgi/image/format=webp,width=750/front-static/pages/home/notion-parade.png" alt="">
+    </section>
+
+    <section class="contact">
+         <div class="cont-right">
+             <img src="data:image/png;base64,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" alt="" width="100px">
+             <div class="right-icons">
+                <a href="" class="pure"><i class="bi bi-instagram"></i></a>
+                <a href="" class="pure"><i class="bi bi-twitter"></i></a>
+                <a href="" class="pure"><i class="bi bi-linkedin"></i></a>
+                <a href="" class="pure"><i class="bi bi-facebook"></i></a>
+                <a href="" class="pure"><i class="bi bi-youtube"></i></a>
+             </div>
+             <a href="" class="eng">English</a>
+         </div>
+
+         <div class="left-mix">
+            <div class="fes-mix">
+                <h4>Product</h4>
+                <a href="" class="docs">AI</a>
+                <a href="" class="docs">Docs</a>
+                <a href="" class="docs">Wikis</a>
+                <a href="" class="docs">Projects</a>
+                <a href="" class="docs">Calendar</a>
+                <a href="" class="docs">Whats new</a>
+            </div>
+
+            <div class="fes-mix">
+                <h4>Download</h4>
+                <a href="" class="docs">iOS and Android</a>
+                <a href="" class="docs">Mac and Windows</a>
+                <a href="" class="docs">Calendar</a>
+                <a href="" class="docs">Web Clipper</a>
+            </div>
+
+            <div class="fes-mix">
+                <h4>Get started</h4>
+                <a href="" class="docs">Switch from confluence</a>
+                <a href="" class="docs">Switch from Asana</a>
+                <a href="" class="docs">Switch from Evernote</a>
+                <a href="" class="docs">Compare vs Monday</a>
+                <a href="" class="docs">Compare vs Clickup</a>
+                <a href="" class="docs">Compare vs Jira</a>
+            </div>
+
+            <div class="fes-mix">
+                <h4>Solutions</h4>
+                <a href="" class="docs">Enterprise</a>
+                <a href="" class="docs">Small Business</a>
+                <a href="" class="docs">Personal Use</a>
+                <a href="" class="docs">Remote Work</a>
+                <a href="" class="docs">StartUps</a>
+                <a href="" class="docs">Education</a>
+                <a href="" class="docs">Non-profits</a>
+                <a href="" class="docs">Engineering</a>
+                <a href="" class="docs">Product</a>
+                <a href="" class="docs">Designers</a>
+                <a href="" class="docs">Managers</a>
+            </div>
+            <div class="fes-mix">
+                <h4>Build</h4>
+                <a href="" class="docs">Integrations</a>
+                <a href="" class="docs">Templates</a>
+                <a href="" class="docs">API docs</a>
+                <a href="" class="docs">Guides & Tutorials</a>
+                <a href="" class="docs">Hire a consultant</a>
+                <a href="" class="docs">Become a partner</a>
+                <a href="" class="docs">Become an affiliate</a>
+            </div>
+            <div class="fes-mix">
+                <h4>Resources</h4>
+                <a href="" class="docs">Pricing</a>
+                <a href="" class="docs">About Us</a>
+                <a href="" class="docs">Careers</a>
+                <a href="" class="docs">Media Kit</a>
+                <a href="" class="docs">Email us</a>
+                <a href="" class="docs">Security</a>
+                <a href="" class="docs">Cookie Settings</a>
+                <a href="" class="docs">Privacy & Policy</a>
+                <a href="" class="docs">California privacy policy</a>
+                <a href="" class="docs">Status</a>
+            </div>
+            <div class="fes-mix">
+                <h4>Learn</h4>
+                <a href="" class="docs">Customer Stories</a>
+                <a href="" class="docs">Help Center</a>
+                <a href="" class="docs">Webinars</a>
+                <a href="" class="docs">Blog</a>
+                <a href="" class="docs">Community</a>
+            </div>
+         </div>
+    </section>
+</body>
+</html>

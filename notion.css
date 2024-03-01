@@ -1,0 +1,958 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+.product {
+    color: black;
+    text-decoration: none;
+}
+
+.head {
+   padding: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+.left-head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.get {
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.right-head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.second {
+    text-align: center;
+}
+
+.write {
+    font-size: 60px;
+}
+
+.connect {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.get-2 {
+    background-color: black;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    /* font-size: 14px; */
+    border-radius: 3px;
+}
+
+.request {
+    color: rgb(0, 210, 210);
+    text-decoration: none;
+}
+
+.two-links {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.images {
+    margin-top: 40px;
+}
+
+.first-box {
+    background-color: rgb(227, 227, 227);
+    padding: 15px;
+    /* width: 25%; */
+    height: 170px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.little-boxes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.first-box > i {
+    font-size: 25px;
+    color: blueviolet;
+    background-color: rgba(137, 43, 226, 0.226);
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px;
+    /* border-radius: 15px; */
+}
+
+.ai {
+    font-size: 20px;
+}
+
+.ask {
+    font-size: 14px;
+}
+
+.second-box {
+    background-color: rgb(227, 227, 227);
+    padding: 15px;
+    /* width: 25%; */
+    height: 170px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.second-box > i {
+    font-size: 25px;
+    color: yellow;
+    background-color: rgba(208, 255, 0, 0.226);
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px;
+    /* border-radius: 15px; */
+}
+
+.third-box {
+    background-color: rgb(227, 227, 227);
+    padding: 15px;
+    /* width: 25%; */
+    height: 170px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.third-box > i {
+    font-size: 25px;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.226);
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px;
+    /* border-radius: 15px; */
+}
+
+
+.fourth-box {
+    background-color: rgb(227, 227, 227);
+    padding: 15px;
+    /* width: 25%; */
+    height: 170px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.fourth-box > i {
+    font-size: 25px;
+    color: blue;
+    background-color: rgba(0, 4, 255, 0.226);
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px;
+    /* border-radius: 15px; */
+}
+
+.fifth-box {
+    background-color: rgb(227, 227, 227);
+    padding: 15px;
+    /* width: 25%; */
+    height: 170px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.fifth-box > i {
+    font-size: 25px;
+    color: orange;
+    background-color: rgba(255, 94, 0, 0.226);
+    padding: 5px;
+    border-radius: 5px;
+    width: 35px;
+    /* border-radius: 15px; */
+}
+
+.first-box:hover {
+      background-color: transparent;
+      border: 1px solid rgb(227, 227, 227);
+      cursor: pointer;
+      transition: 0.3s;
+}
+
+.second-box:hover {
+    background-color: transparent;
+    border: 1px solid rgb(227, 227, 227);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.third-box:hover {
+    background-color: transparent;
+    border: 1px solid rgb(227, 227, 227);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fourth-box:hover {
+    background-color: transparent;
+    border: 1px solid rgb(227, 227, 227);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fifth-box:hover {
+    background-color: transparent;
+    border: 1px solid rgb(227, 227, 227);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.large-pic {
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+.third {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.millions {
+    font-size: 45px;
+    margin-top: 100px;
+}
+
+
+.power {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgb(171, 171, 171);
+    word-spacing: 2px;
+}
+
+.read {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.customer {
+    text-decoration: none;
+    color: rgb(0, 200, 200);
+}
+
+.logos {
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+    
+}
+
+.blink {
+    margin-right: 30px;
+    margin-top: 25px;
+}
+
+.fourth {
+    text-align: center;
+}
+
+.consolidate {
+    font-size: 45px;
+    margin-top: 90px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    gap: 200px;
+}
+
+.rid {
+    font-size: 35px;
+    font-family: serif;
+    margin-top: 10px;
+}
+
+.justin {
+    font-weight: bold;
+    text-align: left;
+
+}
+
+.guy {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.fifth {
+    text-align: center;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.block {
+    font-size: 45px;
+}
+
+.flex-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 90px;
+}
+
+.large {
+    background-color:  rgb(227, 227, 227);
+    padding: 40px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.large > i {
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    
+}
+
+.die {
+    text-align: left;
+}
+
+.show {
+    margin-top: 10px;
+}
+
+.ino {
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.yeat {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     justify-content: center;
+}
+
+.board {
+     text-decoration: none;
+     border: 1px solid grey;
+     padding: 5px;
+     border-radius: 8px;
+     color: grey;
+     margin-top: 10px;
+}
+
+.bottom-two {
+   margin-top: 20px;
+   display: flex;
+   gap: 20px;
+}
+
+.bottom-fes {
+    background-color:  rgb(227, 227, 227);
+    /* padding: 40px; */
+    text-align: left;
+    width: 50%;
+    border-radius: 10px;
+    /* margin-top: 10px; */
+}
+
+.bottom-fes > i {
+    font-size: 35px;
+    font-weight: bold;
+    color: blue;
+    padding: 40px;
+    padding-top: 40px;
+}
+
+.custom {
+    padding-left: 40px;
+}
+
+
+.create {
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.label {
+    padding: 0;
+}
+
+.sixth {
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+}
+
+.team {
+    font-size: 45px;
+    margin-top: 100px;
+}
+
+.min-tool {
+    background-color:  rgb(227, 227, 227);
+    width: 16.6%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tools {
+    display: flex;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.hi {
+    margin-top: 15px;
+    box-shadow: 0px 10px 10px 0px grey;
+    border-radius: 15px;
+}
+
+.seventh {
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+}
+
+.join {
+    margin-top: 120px;
+    font-size: 45px;
+}
+
+.vibe {
+    color: grey;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.more {
+    text-decoration: none;
+    color: rgb(0, 237, 237);
+    margin-top: 15px;
+}
+
+.race {
+    margin-top: 70px;
+}
+
+.numbers {
+    display: flex;
+    gap: 20px;
+}
+
+.min-num {
+    background-color:  rgb(227, 227, 227);
+    width: 33.3%;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.mill {
+    font-size: 50px;
+    color: rgb(0, 110, 255);
+}
+
+.members {
+    margin-top: 15px;
+}
+
+.min-sec {
+    background-color:  rgb(227, 227, 227);
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.swap {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.sec-num {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.tokyo-1 {
+    width: 70%;
+    background-color:  rgb(227, 227, 227);
+    border-radius: 10px;
+    padding: 20px;
+    height: 680px;
+}
+
+.meet {
+    margin-top: 10px;
+}
+
+.right-small {
+    /* width: 30%; */
+    background-color:  rgb(227, 227, 227);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+}
+
+.mini-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.debbie {
+    font-weight: bold;
+}
+
+.mecca {
+    color: grey;
+}
+
+.used {
+    margin-top: 10px;
+}
+
+.right-big {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.tokyo {
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.eigth {
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+}
+
+.man {
+    display: flex;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.endless {
+    font-size: 45px;
+    margin-bottom: 10px;
+   
+}
+
+.browse {
+    color: rgb(0, 94, 255);
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.peek {
+    margin-top: 60px;
+}
+
+.fes-massive {
+    background-color:  rgb(227, 227, 227);
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;
+}
+
+.fes-massive > i {
+    font-size: 20px;
+    color: orangered;
+    padding: 20px;
+    /* margin-top: 20px; */
+}
+
+.wick {
+    padding: 20px;
+}
+
+.temp {
+    text-decoration: none;
+    color: rgb(0, 94, 255);
+    padding: 20px;
+}
+
+.massive {
+    display: flex;
+    gap: 20px;
+}
+
+.sc-mass {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    margin: 0;
+    gap: 20px;
+}
+
+.mini-sc {
+    background-color:  rgb(227, 227, 227);
+    border-radius: 10px;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.mini-sc > i {
+    color: blue;
+    font-size: 20px;
+}
+
+
+.road {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.temp-2 {
+    text-decoration: none;
+    color: rgb(0, 94, 255);
+}
+
+.ninth {
+    /* padding-left: 250px;
+    padding-right: 250px; */
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
+.start {
+    font-size: 60px;
+    margin-top: 150px;
+}
+
+.play {
+    color: grey;
+    margin-top: 10px;
+}
+
+.linking {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.contact {
+   padding-left: 250px;
+   padding-right: 250px;
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.right-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.pure{
+    font-size: 23px;
+    color: grey;
+}
+
+.eng {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid grey;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.docs {
+    text-decoration: none;
+    color: grey;
+
+}
+
+/* .docs:hover {
+    color: rgb(0, 94, 255);
+    border-bottom: 2px solid  rgb(0, 94, 255);
+} */
+
+.fes-mix {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left-mix {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+@media screen and (max-width: 1200px){
+     .first, .second, .third, .fourth, .fifth, .sixth, .seventh, .eigth, .ninth {
+        padding-left: 80px;
+        padding-right: 80px;
+     }
+
+     .first-box, .second-box, .third-box, .fourth-box, .fifth-box {
+        width: 100%;
+     }
+
+     .little-boxes {
+        padding-left: 0px;
+        padding-right: 0px;
+     }
+
+     .contact {
+        padding-left: 100px;
+        padding-right: 100px;
+     }
+
+     .logos {
+        padding-left: 100px;
+        padding-right: 100px;
+     }
+
+
+}
+
+@media screen and (max-width: 1075px) {
+    .tokyo {
+        flex-direction: column;
+    }
+
+    .tokyo-1 {
+        width: 100%;
+    }
+
+    .right-big {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .product {
+        display: none;
+    }
+
+    .massive {
+        flex-direction: column;
+    }
+
+    .fes-massive {
+        width: 100%;
+    }
+
+    .sc-mass {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .left-mix {
+        margin-top: 50px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .rid {
+        font-size: 25px;
+    }
+
+    .consolidate {
+        font-size: 35px;
+    }
+
+    .block {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .rocket {
+        display: none;
+    }
+    .endless {
+        font-size: 30px;
+    }
+
+    .consolidate {
+        font-size: 30px;
+    }
+
+.first-box, .second-box, .third-box, .fourth-box, .fifth-box {
+    height: 100%;
+}
+
+.millions {
+    font-size: 30px;
+}
+
+.connect {
+    font-size: 18px;
+}
+
+.little-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.write {
+    font-size: 35px;
+}
+
+.min-tool {
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width: 690px) {
+    .numbers {
+        flex-direction: column;
+    }
+
+    .min-num {
+        width: 100%;
+    }
+
+    .sec-num {
+        flex-direction: column;
+    }
+    .min-sec {
+        width: 100%;
+    }
+
+    .right-big {
+        flex-direction: column;
+    }
+
+    .flex {
+        gap: 10px;
+    }
+    .board {
+        font-size: 12px;
+    }
+
+    .min-tool {
+        padding: 5px;
+    }
+
+    .browse {
+        font-size: 12px;
+    }
+
+    .endless {
+        font: 15px;
+    }
+
+    .sc-mass {
+        grid-template-columns: 500px ;
+    }
+
+    .custom {
+        font-size: 15px;
+    }
+
+    .bottom-fes > i {
+        font-size: 20px;
+    }
+
+    .create {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .board {
+        display: none;
+    }
+
+    .guy > img {
+        width: 30px;
+        height: 10px;
+    }
+
+    .tools {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .custom {
+        font-size: 7px;
+    }
+
+    .create {
+        font-size: 3px;
+    }
+
+    .join {
+        font-size: 25px;
+    }
+
+    .block {
+        font-size: 27px;
+    }
+}
